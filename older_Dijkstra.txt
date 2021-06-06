@@ -1,0 +1,14 @@
+older_Dijkstra:usage.o num_protein_make.o judge.o array_make.o creat_new.o older_Dijkstra.o 
+	gcc -o older_Dijkstra usage.o num_protein_make.o judge.o array_make.o creat_new.o older_Dijkstra.o
+usage.o: common.h usage.c
+	gcc -o usage.o -c usage.c
+num_protein_make.o:common.h num_protein_make.c
+	gcc -o num_protein_make.o -c num_protein_make.c
+judge.o: common.h judge.c
+	gcc -o judge.o -c judge.c
+array_make.o: common.h array_make.c
+	gcc -o array_make.o -c array_make.c	
+creat_new.o: common.h creat_new.c
+	gcc -o creat_new.o -c creat_new.c
+older_Dijkstra.o: common.h older_Dijkstra.c
+	gcc -o older_Dijkstra.o -c older_Dijkstra.c
