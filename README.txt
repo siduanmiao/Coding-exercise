@@ -1,4 +1,4 @@
-//README.txt
+//README
 In our program, we use three algorithms to finish our work:
 	Dijkstra
 	Floyd-Warshall
@@ -40,25 +40,35 @@ the num_protein.txt and new.txt are the files in the process for all  algorithms
 		using the 	Correspondence we stored in the num_protein.txt to transfer the source data to a pure num file
 propath.sh is a bash file ,you can use it to call all the algorithms.
 
-Examples in use:
 
-	./Floyd-Warshall	using the file input and gain the result.txt as result 
-	./Dijkstra protein1 protein2	process the protein1 protein2
-	./Bellman_Ford protein1 protein2	process the protein1 protein2
-	./older_Dijkstra protein1 protein2	process the protein1 protein2
 
 if you want to use propath.sh,then use :
 	bash propath.sh -option [option1] [option2]
 option:
 
-	-f : using Floyd-Warshall algorithm,you can't add option1 and option2
+	-f:using Floyd-Warshall algorithm,you can't add option1 and option2
 		
 	-d:using Dijkstra algorithm,you must add option1 and option2
 
 	-b:using Bellman_Ford algorithm,you must add option1 and option2
 
 	-o:using older_Dijkstra algorithm,you must add option1 and option2
+	
+	-t:process Dijkstra Bellman_Ford older_Dijkstra algorithms and output their time
+	
+	--option:show all the options you can use
+	
+	if the use "-option --help" or "-option -h",you can call the useful line of the help file
+    
 option1:protein1
 	
 option2:protein1
+
+Examples in use:
+
+	./Floyd-Warshall	using the file input and gain the result.txt as result 
+	./Dijkstra protein1 protein2	process the protein1 protein2
+	./Bellman_Ford protein1 protein2	process the protein1 protein2
+	./older_Dijkstra protein1 protein2	process the protein1 protein2
+	
 
