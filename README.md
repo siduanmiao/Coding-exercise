@@ -14,5 +14,6 @@
   制作GitHub仓库：就是这个库
   制作最终包里的README.txt文档:README.txt
   测试集搜集和测试：1504319.protein.links.v11.0.txt
+  制作Makefile文档，由于能力有限，所以在制作时每个算法做了一个对应的文档，算法名.txt的文档就是我写的makefile
 
   
